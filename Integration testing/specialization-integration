@@ -1,0 +1,65 @@
+{
+	"id": "f65ee53a-0bb0-4628-add9-f837d35add77",
+	"name": "TimeTable_management_system",
+	"timestamp": "2024-03-24T17:27:59.811Z",
+	"collection_id": "25651207-7c6978bf-438d-48a5-83fd-081e3c2b4a60",
+	"folder_id": "25651207-225d3621-2f5f-46f9-bc74-6aa7ac99187f",
+	"environment_id": "0",
+	"totalPass": 2,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-03-24T17:27:58.140Z",
+	"totalFail": 1,
+	"results": [
+		{
+			"id": "7ace67a3-a7fe-457b-97f9-c43e8168e5e6",
+			"name": "CreateSpecialization",
+			"url": "http://localhost:3000/specialization/createSpecialization",
+			"time": 1269,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 201": false,
+				"status code is 400": true,
+				"Response contains success message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 0,
+					"fail": 1
+				},
+				"status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains success message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1269
+			],
+			"allTests": [
+				{
+					"Status code is 201": false,
+					"status code is 400": true,
+					"Response contains success message": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1269,
+	"collection": {
+		"requests": [
+			{
+				"id": "7ace67a3-a7fe-457b-97f9-c43e8168e5e6",
+				"method": "POST"
+			}
+		]
+	}
+}

@@ -1,0 +1,96 @@
+{
+	"id": "6983b24c-d477-4ab5-a823-ba1b9fc998b5",
+	"name": "TimeTable_management_system",
+	"timestamp": "2024-03-24T17:21:31.700Z",
+	"collection_id": "25651207-7c6978bf-438d-48a5-83fd-081e3c2b4a60",
+	"folder_id": "25651207-783d7a65-6746-48d1-a086-e2e207c58d28",
+	"environment_id": "0",
+	"totalPass": 4,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-03-24T17:21:30.947Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "7e30e650-35bb-427d-ac60-1c18e0318d59",
+			"name": "Login",
+			"url": "http://localhost:3000/user/login",
+			"time": 149,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Response contains success message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains success message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				149
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Response contains success message": true
+				}
+			]
+		},
+		{
+			"id": "34a77496-4b50-4ed9-ab13-41a76aaca356",
+			"name": "Signup",
+			"url": "http://localhost:3000/user/signup",
+			"time": 212,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Response contains success message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains success message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				212
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Response contains success message": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 361,
+	"collection": {
+		"requests": [
+			{
+				"id": "7e30e650-35bb-427d-ac60-1c18e0318d59",
+				"method": "POST"
+			},
+			{
+				"id": "34a77496-4b50-4ed9-ab13-41a76aaca356",
+				"method": "POST"
+			}
+		]
+	}
+}

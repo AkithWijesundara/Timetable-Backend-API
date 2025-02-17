@@ -1,0 +1,65 @@
+{
+	"id": "77bef55e-9842-40c0-a2d0-0c1fa027d0f6",
+	"name": "TimeTable_management_system",
+	"timestamp": "2024-03-24T17:24:48.572Z",
+	"collection_id": "25651207-7c6978bf-438d-48a5-83fd-081e3c2b4a60",
+	"folder_id": "25651207-2393c527-9b37-461f-b8c0-e9da11cb44a4",
+	"environment_id": "0",
+	"totalPass": 2,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-03-24T17:24:48.072Z",
+	"totalFail": 1,
+	"results": [
+		{
+			"id": "8094427d-e41a-4380-b954-738063fdd4c4",
+			"name": "CreateLocation",
+			"url": "http://localhost:3000/location/createLocation",
+			"time": 140,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 200": false,
+				"status code is 400": true,
+				"Response contains success message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				},
+				"status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains success message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				140
+			],
+			"allTests": [
+				{
+					"Status code is 200": false,
+					"status code is 400": true,
+					"Response contains success message": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 140,
+	"collection": {
+		"requests": [
+			{
+				"id": "8094427d-e41a-4380-b954-738063fdd4c4",
+				"method": "POST"
+			}
+		]
+	}
+}

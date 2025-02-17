@@ -1,0 +1,65 @@
+{
+	"id": "6b20a77b-7415-49d2-be92-71112a258133",
+	"name": "TimeTable_management_system",
+	"timestamp": "2024-03-24T17:27:22.309Z",
+	"collection_id": "25651207-7c6978bf-438d-48a5-83fd-081e3c2b4a60",
+	"folder_id": "25651207-0b70b418-7132-4c0b-9c75-77ea477c7923",
+	"environment_id": "0",
+	"totalPass": 2,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-03-24T17:27:18.085Z",
+	"totalFail": 1,
+	"results": [
+		{
+			"id": "648dcaeb-78e4-4c59-b2ae-9e97d2c78fd8",
+			"name": "CreateBooking",
+			"url": "http://localhost:3000/booking/createBooking",
+			"time": 3890,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 201": false,
+				"status code is 400": true,
+				"Response contains success message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 0,
+					"fail": 1
+				},
+				"status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains success message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				3890
+			],
+			"allTests": [
+				{
+					"Status code is 201": false,
+					"status code is 400": true,
+					"Response contains success message": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 3890,
+	"collection": {
+		"requests": [
+			{
+				"id": "648dcaeb-78e4-4c59-b2ae-9e97d2c78fd8",
+				"method": "POST"
+			}
+		]
+	}
+}

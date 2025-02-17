@@ -1,0 +1,151 @@
+{
+	"id": "a6c1ae30-08b1-4e32-b2b2-1115a5659ef4",
+	"name": "TimeTable_management_system",
+	"timestamp": "2024-03-24T17:24:16.620Z",
+	"collection_id": "25651207-7c6978bf-438d-48a5-83fd-081e3c2b4a60",
+	"folder_id": "25651207-776fba3c-af3c-4aab-8826-b3ccbe9d1bad",
+	"environment_id": "0",
+	"totalPass": 6,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-03-24T17:24:11.477Z",
+	"totalFail": 3,
+	"results": [
+		{
+			"id": "00924551-bba3-47f5-80ab-5e3e0b31fce6",
+			"name": "CreateSession",
+			"url": "http://localhost:3000/session/createSession",
+			"time": 4020,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"status code is 400": false,
+				"Response contains success message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"status code is 400": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response contains success message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				4020
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"status code is 400": false,
+					"Response contains success message": true
+				}
+			]
+		},
+		{
+			"id": "1fdc83a1-8d2a-4f45-9c32-d370edaf065b",
+			"name": "UpdateSession",
+			"url": "http://localhost:3000/session/updateSession/65fde90c60a9ade35b61b1c0",
+			"time": 567,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"status code is 400": false,
+				"Response contains success message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"status code is 400": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response contains success message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				567
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"status code is 400": false,
+					"Response contains success message": true
+				}
+			]
+		},
+		{
+			"id": "0a8ef6c0-dc2d-46c1-bfa3-2a5f5618d191",
+			"name": "DeleteSession",
+			"url": "http://localhost:3000/session/deleteSession/65fc8acbe06872a801887077",
+			"time": 118,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 200": false,
+				"status code is 400": true,
+				"Response contains success message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				},
+				"status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains success message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				118
+			],
+			"allTests": [
+				{
+					"Status code is 200": false,
+					"status code is 400": true,
+					"Response contains success message": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 4705,
+	"collection": {
+		"requests": [
+			{
+				"id": "00924551-bba3-47f5-80ab-5e3e0b31fce6",
+				"method": "POST"
+			},
+			{
+				"id": "1fdc83a1-8d2a-4f45-9c32-d370edaf065b",
+				"method": "PUT"
+			},
+			{
+				"id": "0a8ef6c0-dc2d-46c1-bfa3-2a5f5618d191",
+				"method": "DELETE"
+			}
+		]
+	}
+}

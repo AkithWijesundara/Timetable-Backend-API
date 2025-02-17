@@ -1,0 +1,65 @@
+{
+	"id": "c92f4acf-c88f-4ef0-a2d7-7398fc94a573",
+	"name": "TimeTable_management_system",
+	"timestamp": "2024-03-24T17:22:48.649Z",
+	"collection_id": "25651207-7c6978bf-438d-48a5-83fd-081e3c2b4a60",
+	"folder_id": "25651207-4e648d2f-b03e-465c-81e5-14e8021542f8",
+	"environment_id": "0",
+	"totalPass": 2,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-03-24T17:22:48.030Z",
+	"totalFail": 1,
+	"results": [
+		{
+			"id": "56206313-e09c-4d5d-9019-5de9992ca3c3",
+			"name": "CreateFaculty",
+			"url": "http://localhost:3000/faculty/createFaculty",
+			"time": 180,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"status code is 400": false,
+				"Response contains success message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"status code is 400": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response contains success message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				180
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"status code is 400": false,
+					"Response contains success message": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 180,
+	"collection": {
+		"requests": [
+			{
+				"id": "56206313-e09c-4d5d-9019-5de9992ca3c3",
+				"method": "POST"
+			}
+		]
+	}
+}

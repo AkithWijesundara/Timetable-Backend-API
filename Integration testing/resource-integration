@@ -1,0 +1,65 @@
+{
+	"id": "08e344aa-d300-499d-9b2c-8eb93cac143f",
+	"name": "TimeTable_management_system",
+	"timestamp": "2024-03-24T17:26:11.799Z",
+	"collection_id": "25651207-7c6978bf-438d-48a5-83fd-081e3c2b4a60",
+	"folder_id": "25651207-2291eb92-bbd5-4792-819c-eae216a62dde",
+	"environment_id": "0",
+	"totalPass": 2,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-03-24T17:26:11.114Z",
+	"totalFail": 1,
+	"results": [
+		{
+			"id": "8dcd52ca-bd03-4d4c-936f-5c271919acd4",
+			"name": "CreateResource",
+			"url": "http://localhost:3000/resource/createResource",
+			"time": 200,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 201": false,
+				"status code is 400": true,
+				"Response contains success message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 0,
+					"fail": 1
+				},
+				"status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains success message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				200
+			],
+			"allTests": [
+				{
+					"Status code is 201": false,
+					"status code is 400": true,
+					"Response contains success message": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 200,
+	"collection": {
+		"requests": [
+			{
+				"id": "8dcd52ca-bd03-4d4c-936f-5c271919acd4",
+				"method": "POST"
+			}
+		]
+	}
+}

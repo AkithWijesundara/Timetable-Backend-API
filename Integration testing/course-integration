@@ -1,0 +1,280 @@
+{
+	"id": "46a73b07-a4f8-41e3-a599-25f5fde33ac6",
+	"name": "TimeTable_management_system",
+	"timestamp": "2024-03-24T17:23:35.789Z",
+	"collection_id": "25651207-7c6978bf-438d-48a5-83fd-081e3c2b4a60",
+	"folder_id": "25651207-3a5c716e-cb83-43cc-a6b0-90fdf5b11685",
+	"environment_id": "0",
+	"totalPass": 12,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-03-24T17:23:30.177Z",
+	"totalFail": 6,
+	"results": [
+		{
+			"id": "ef1e2094-af30-475e-a4f4-d8593eb8d91c",
+			"name": "CreateCourse",
+			"url": "http://localhost:3000/course/createCourse",
+			"time": 3865,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 201": false,
+				"status code is 400": true,
+				"Response contains success message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 0,
+					"fail": 1
+				},
+				"status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains success message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				3865
+			],
+			"allTests": [
+				{
+					"Status code is 201": false,
+					"status code is 400": true,
+					"Response contains success message": true
+				}
+			]
+		},
+		{
+			"id": "9633654c-e2c3-416e-9a0a-5ba96d39a94f",
+			"name": "AssignFaculty",
+			"url": "http://localhost:3000/course/assignFaculty/65ffe25b4a5656bfb12527ee",
+			"time": 117,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"status code is 400": false,
+				"Response contains success message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"status code is 400": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response contains success message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				117
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"status code is 400": false,
+					"Response contains success message": true
+				}
+			]
+		},
+		{
+			"id": "a7a1e553-e91b-4ae7-b89f-60ce2a62bd7b",
+			"name": "GetCourseyFaculty",
+			"url": "http://localhost:3000/course/getCourseByFaculty",
+			"time": 244,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"status code is 400": false,
+				"Response contains success message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"status code is 400": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response contains success message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				244
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"status code is 400": false,
+					"Response contains success message": true
+				}
+			]
+		},
+		{
+			"id": "ce8573d3-7b5b-4bf4-8ba4-90a284063a26",
+			"name": "GetAllCourses",
+			"url": "http://localhost:3000/course/getCourses",
+			"time": 203,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"status code is 400": false,
+				"Response contains success message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"status code is 400": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response contains success message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				203
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"status code is 400": false,
+					"Response contains success message": true
+				}
+			]
+		},
+		{
+			"id": "68f60d57-22b1-4a79-b762-a5bc22e7151d",
+			"name": "UpdateCourse",
+			"url": "http://localhost:3000/course/updateCourse/65f8ae200f927530ab1431c0",
+			"time": 238,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 201": false,
+				"status code is 400": true,
+				"Response contains success message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 0,
+					"fail": 1
+				},
+				"status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains success message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				238
+			],
+			"allTests": [
+				{
+					"Status code is 201": false,
+					"status code is 400": true,
+					"Response contains success message": true
+				}
+			]
+		},
+		{
+			"id": "c362aeb9-ecaa-4376-8637-df173841a72e",
+			"name": "DeleteCourse",
+			"url": "http://localhost:3000/course/deleteCourse/65f9d0035fee28ecd6b882ea",
+			"time": 134,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 200": false,
+				"status code is 400": true,
+				"Response contains success message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				},
+				"status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains success message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				134
+			],
+			"allTests": [
+				{
+					"Status code is 200": false,
+					"status code is 400": true,
+					"Response contains success message": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 4801,
+	"collection": {
+		"requests": [
+			{
+				"id": "ef1e2094-af30-475e-a4f4-d8593eb8d91c",
+				"method": "POST"
+			},
+			{
+				"id": "9633654c-e2c3-416e-9a0a-5ba96d39a94f",
+				"method": "PUT"
+			},
+			{
+				"id": "a7a1e553-e91b-4ae7-b89f-60ce2a62bd7b",
+				"method": "GET"
+			},
+			{
+				"id": "ce8573d3-7b5b-4bf4-8ba4-90a284063a26",
+				"method": "GET"
+			},
+			{
+				"id": "68f60d57-22b1-4a79-b762-a5bc22e7151d",
+				"method": "PUT"
+			},
+			{
+				"id": "c362aeb9-ecaa-4376-8637-df173841a72e",
+				"method": "DELETE"
+			}
+		]
+	}
+}

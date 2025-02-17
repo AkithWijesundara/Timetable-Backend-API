@@ -1,0 +1,151 @@
+{
+	"id": "543b079d-a3ba-45c2-89ee-c2b40a092cb7",
+	"name": "TimeTable_management_system",
+	"timestamp": "2024-03-24T17:25:11.802Z",
+	"collection_id": "25651207-7c6978bf-438d-48a5-83fd-081e3c2b4a60",
+	"folder_id": "25651207-7cebdec1-7945-4344-b1f5-ffb4fd24b911",
+	"environment_id": "0",
+	"totalPass": 6,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-03-24T17:25:10.709Z",
+	"totalFail": 3,
+	"results": [
+		{
+			"id": "35e36d16-62c5-4fb9-848c-20d200dbbe89",
+			"name": "EnrollStudent",
+			"url": "http://localhost:3000/enroll/enrollStudent",
+			"time": 147,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"status code is 400": false,
+				"Response contains success message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"status code is 400": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response contains success message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				147
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"status code is 400": false,
+					"Response contains success message": true
+				}
+			]
+		},
+		{
+			"id": "75da045b-6215-42e7-889e-bf1f750314c2",
+			"name": "ManageEnrollments",
+			"url": "http://localhost:3000/enroll/manageEnrollments/65fdf28d7a6ff05acaa9cb96",
+			"time": 133,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"status code is 400": false,
+				"Response contains success message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"status code is 400": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response contains success message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				133
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"status code is 400": false,
+					"Response contains success message": true
+				}
+			]
+		},
+		{
+			"id": "1f92d4a4-8fbc-4a43-be85-810cb067f672",
+			"name": "ViewEnrollments",
+			"url": "http://localhost:3000/enroll/viewEnrollments",
+			"time": 174,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"status code is 400": false,
+				"Response contains success message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"status code is 400": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response contains success message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				174
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"status code is 400": false,
+					"Response contains success message": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 454,
+	"collection": {
+		"requests": [
+			{
+				"id": "35e36d16-62c5-4fb9-848c-20d200dbbe89",
+				"method": "POST"
+			},
+			{
+				"id": "75da045b-6215-42e7-889e-bf1f750314c2",
+				"method": "PUT"
+			},
+			{
+				"id": "1f92d4a4-8fbc-4a43-be85-810cb067f672",
+				"method": "GET"
+			}
+		]
+	}
+}

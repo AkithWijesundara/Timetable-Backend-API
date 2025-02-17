@@ -1,0 +1,65 @@
+{
+	"id": "eaee4760-d0ae-46da-b944-a1c17ccd16b7",
+	"name": "TimeTable_management_system",
+	"timestamp": "2024-03-24T17:26:50.166Z",
+	"collection_id": "25651207-7c6978bf-438d-48a5-83fd-081e3c2b4a60",
+	"folder_id": "25651207-19b31a75-66e6-45f1-8a8f-6be7c15f34b3",
+	"environment_id": "0",
+	"totalPass": 2,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-03-24T17:26:48.528Z",
+	"totalFail": 1,
+	"results": [
+		{
+			"id": "6dc22d1b-6822-4ed9-a308-36a37f014f45",
+			"name": "CreateRoom",
+			"url": "http://localhost:3000/room/createRoom",
+			"time": 1224,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"status code is 400": false,
+				"Response contains success message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"status code is 400": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response contains success message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1224
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"status code is 400": false,
+					"Response contains success message": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1224,
+	"collection": {
+		"requests": [
+			{
+				"id": "6dc22d1b-6822-4ed9-a308-36a37f014f45",
+				"method": "POST"
+			}
+		]
+	}
+}
